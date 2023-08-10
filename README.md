@@ -1,42 +1,36 @@
 # Estimating_Crop_Evapotranspiration_Uncertainty_with_HRMET
 
-![working_example_plot](https://github.com/Kwakuopokuware401/Estimating_Crop_Evapotranspiration_Uncertainty_with_HRMET_in_Python/assets/94206249/d0623e0e-686b-49cd-b71e-585682b972d2)
+![download](https://github.com/Kwakuopokuware401/Estimating_Crop_Evapotranspiration_Uncertainty_with_HRMET/assets/94206249/faccd35f-61ed-4b94-b142-e8b172c4c48b)
 
 
 Author:  Kwaku Opoku-Ware (kwakuopokuware401@gmail.com)
 
+# Description
+This project implements the HRMET evapotranspiration model in Python and analyzes uncertainty in the model outputs.
 
-## Description 
-Translating the HRMET evapotranspiration model to Python in Jupyter Notebooks and applying it over gridded crop fields to estimate spatial ET uncertainty resulting from weather input errors. Focuses on perturbing inputs like temperature and radiation based on sensor specs and propagating through the Penman-Monteith model via Monte Carlo simulation.
+# Overview
+- Implements gridded HRMET model in Python based on original MATLAB code
 
-## HRMET Gridded Evapotranspiration Model
-This code implements the HRMET evapotranspiration model over a synthetic gridded domain. It also includes an analysis of input uncertainty and propagation through the model output.
+- Generates synthetic weather data as model inputs
 
-## Model overview
-HRMET is a relatively simple point evapotranspiration model that uses a Penman-Monteith approach. It requires standard weather data and vegetation/soil properties.
+- Estimates uncertainty in inputs like temperature using statistical techniques
 
-The core model is implemented in Python based on a translation from the original MATLAB code.
+- Propagates input uncertainty through the HRMET model to estimate output uncertainty
 
-## Running the model
-The entry point is hrmet.py by setting-up input variables. It allows running the model and visualizing outputs.
+- Analyzes and visualizes uncertainty maps
 
-The key steps are:
+# Uncertainty Analysis
 
--Set up synthetic gridded input data
+-Input uncertainty is estimated using statistical techniques like moving window standard deviation.
 
--Loop over grid cells, running HRMET at each point
+-Uncertainty is propagated through the HRMET model using Monte Carlo simulation.
 
--Generate map of ET estimates
-![Gridded_ET](https://github.com/Kwakuopokuware401/Estimating_Crop_Evapotranspiration_Uncertainty_with_HRMET_in_Python/assets/94206249/21fd5728-9dfa-4e41-947c-dd5e2b91a400)
-
--Estimate uncertainty in input data (here surface temperature)
-
--Propagate uncertainty through to ET outputs
-
--Analyze uncertainty statistics
+-Output uncertainty metrics are analyzed.
 
 ## Requirements
 The code requires the following Python packages:
+
+-Python 3.6 or higher
 
 -numpy
 
@@ -46,9 +40,6 @@ The code requires the following Python packages:
 
 ## Applications
 Potential use cases for this modeling approach include:
-
-![Comparing Uncertainty techniques](https://github.com/Kwakuopokuware401/Estimating_Crop_Evapotranspiration_Uncertainty_with_HRMET_in_Python/assets/94206249/1abf2412-0440-469e-9ba1-77c7ca49d488)
-
 
 -Spatial analysis of ET over agricultural fields
 
