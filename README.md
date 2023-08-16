@@ -39,6 +39,8 @@ The code requires the following Python packages:
 -datetime
 
 ## Applications
+![download_ET_map](https://github.com/Kwakuopokuware401/Estimating_Crop_Evapotranspiration_Uncertainty_with_HRMET/assets/94206249/a574ec71-52f4-4659-875c-c68df8559535)
+
 Potential use cases for this modeling approach include:
 
 -Spatial analysis of ET over agricultural fields
